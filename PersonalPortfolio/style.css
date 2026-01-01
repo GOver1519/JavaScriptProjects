@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(38, 53, 66);
+    animation: myAnimation 4s;
+}
+
+@keyframes myAnimation {
+    0% { background-color: rgb(87, 50, 50); }
+    20% { background-color: rgb(83, 87, 50); }
+    40% { background-color: rgb(60, 87, 50); }
+    60% { background-color: rgb(50, 87, 84); }
+    80% { background-color: rgb(50, 51, 87); }
+    100% { background-color: rgb(81, 50, 87); }
+}
+
+.mainBody {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: auto auto auto;
+}
+
+.intro {
+    width: 400px;
+}
+
+.name {
+    display: inline-block;
+    color: rgb(235, 244, 252);
+}
+
+.delay {
+    transform: translateY(-50px);
+    animation: dropIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resume,
+.linkedIn,
+.gitHub,
+.leetCode {
+    display: flex;
+    flex-direction: column;
+    color: rgb(235, 244, 252);
+    font-size: x-small;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+/* FIXED: height now adjusts to content */
+.threeRows {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1px;
+    border-radius: 25px;
+    background-color: rgb(193, 212, 228);
+    padding: 20px;
+}
+
+.contact {
+    background-color: rgb(38, 53, 66);
+    border-radius: 25px;
+    color: rgb(235, 244, 252);
+}
+
+.education {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+    background-color: rgb(193, 212, 228);
+    padding: 20px;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+    border-radius: 25px;
+    background-color: rgb(193, 212, 228);
+    padding: 20px;
+}
+
+.twoRows {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Row 1 */
+.row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background: rgb(193, 212, 228);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Inner items (no radius) */
+.row1 div {
+    
+    border-radius: 0;
+    color: rgb(38, 53, 66);
+}
+
+/* Row 2 */
+.row2 .single {
+    background: rgb(193, 212, 228);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(38, 53, 66);
+}
+
+
+/* ----------- GLOBAL PAGE DROP SEQUENCE ----------- */
+
+/* Every section starts hidden */
+.section-drop {
+    opacity: 0;
+    transform: translateY(-80px);
+    animation: dropBounce 0.9s cubic-bezier(.19,1.1,.22,1) forwards;
+}
+
+/* Drop + bounce effect */
+@keyframes dropBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delays so each comes one after another */
+.delay1 { animation-delay: 1s; }
+.delay2 { animation-delay: 2s; }
+.delay3 { animation-delay: 3s; }
+.delay4 { animation-delay: 4s; }
+.delay5 { animation-delay: 5s; }
+.delay6 { animation-delay: 6s; }
+.delay7 { animation-delay: 7s; }
+
+
+/* --------------------------------------------------
+   RESPONSIVENESS
+-------------------------------------------------- */
+
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px){
+
+    .mainBody{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .intro{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutMe{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .education{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* -------------------- DARK MODE (your current theme) -------------------- */
+body {
+    background-color: #001F3F;
+    color: #ffffff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
