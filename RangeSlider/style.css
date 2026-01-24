@@ -1,0 +1,156 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #C5D89D;
+}
+/*card*/
+.main{
+    background-color: #9CAB84;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #89986D;
+    padding: 20px;
+    width: 600px;
+    transition: transform 0.2s;
+}
+
+.main:hover{
+    transform: scale(1.2);
+}
+
+/*Name*/
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #F6F0D7;
+}
+
+/*Price Range*/
+.custom-wrap{
+    margin: 0;
+    width: 70%;
+    padding: 0px 25px 40px;
+    position: relative;
+    left: 63px;
+}
+
+.header{
+    font-size: 30px;
+    color: #F6F0D7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Input container*/
+.price-input-container{
+    width: 100%;
+}
+
+.price-input .price-feild{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.price-feild span{
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 17px;
+    color: #F6F0D7;
+}
+
+.price-feild input{
+    flex: 1;
+    height: 35px;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 9px;
+    text-align: center;
+    background: #89986D;
+}
+
+.price-input{
+    width: 100%;
+    font-size: 19px;
+    color: #F6F0D7;
+}
+
+/*remove arrows in input feild*/
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/*slider*/
+.slider{
+    width: 100%;
+    height: 6px;
+    position: relative;
+    background: #89986D;
+    border-radius: 5px;
+}
+
+.slider .price-slider{
+    height: 100%;
+    left: 25%;
+    right: 15%;
+    position: absolute;
+    border-radius: 5px;
+    background: #C5D89D;
+}
+
+.range-input{
+    position: relative;
+}
+
+.range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: none;
+    top: -5;
+    pointer-events: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 18px;
+    width: 18px;
+    border-radius: 70%;
+    background: #C5D89D;
+    pointer-events: auto;
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 80%;
+        margin-right: 5px;
+    }
+
+    .custom-wrap {
+        width: 100%;
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .projtitle {
+        width: 100%;
+        position: relative;
+        right: 26px;
+    }
+
+    .price-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-field {
+        margin-bottom: 10px;
+    }
+}
