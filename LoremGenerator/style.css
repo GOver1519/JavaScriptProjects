@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*body*/
+body{
+    font-family: arial, sans-serif;
+    background-color: #7AB2B2;
+}
+/*header*/
+header{
+    background-color: #EBF4F6;
+    color: #09637E;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px 0px;
+}
+/*h1*/
+h1{
+    font-size: 28px;
+}
+/*main*/
+main{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #EBF4F6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/*Selecting options*/
+.options {
+    margin-bottom: 20px;
+}
+
+/*All the labels*/
+.options label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+/*All the selecting options*/
+.options input[type = "range"],
+.options select,
+.options input[type = "number"]{
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 20px;
+    border-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 13px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+
+/*Drop downs*/
+.options select{
+    appearance: none;
+}
+/*Generate button*/
+.options button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #09637E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
+        ease;
+}
+
+.options button:hover{
+    background-color: #09637E;
+}
+
+.output{
+    background-color: #ffffff;
+    
+}
