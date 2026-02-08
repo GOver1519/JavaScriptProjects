@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!--Logo -->
+            <div class="logo">
+                <img src="/logo.png" height="100px">
+            </div>
+
+            <!--Menu links -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Billing</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!--Search + Button -->
+            <div class="nav-actions">
+                <input type="text" placeholder="Search..." />
+                <button class="order-btn">Order Online</button>
+            </div>
+        </nav>
+    </header>
+    <!--Home-->
+    <div class="home">
+        <div class="content">
+            <h1>Enjoy Your Delicious Meal</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ex earum natus aliquid eum. Sequi magnam,
+                doloribus incidunt voluptatum enim cum quidem, explicabo nam dolorem eos blanditiis, dolores asperiores
+                perspiciatis?</p><br>
+            <button>Book a table</button>
+        </div>
+        <div class="image">
+            <img src="/homePG.jpeg" style="border-radius: 50%;" height="300px" class="homeImage"><br><br><br>
+        </div>
+    </div>
+    <!--Menu-->
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2 class="menu-title">Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <h3>Idli</h3>
+                <img src="/Idli-chutney-sambar.jpg" alt="Idli">
+                <p class="price">₹40</p>
+                <button class="menuButton" data-item="Idli">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Vada</h3>
+                <img src="/Medu-Vada-1300x867.jpg" alt="Vada">
+                <p class="price">₹30</p>
+                <button class="menuButton" data-item="Vada">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Dosa</h3>
+                <img src="/thumb__1200_0_0_0_auto.jpg" alt="Dosa">
+                <p class="price">₹60</p>
+                <button class="menuButton" data-item="Dosa">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Uttapam</h3>
+                <img src="/Uttapam.jpg" alt="Uttappa">
+                <p class="price">₹70</p>
+                <button class="menuButton" data-item="Uttappa">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Pongal</h3>
+                <img src="/images (3).jpg" alt="Pongal">
+                <p class="price">₹50</p>
+                <button class="menuButton" data-item="Pongal">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Idiyappam</h3>
+                <img src="/118476478.avif" alt="Sabudana Khichdi">
+                <p class="price">₹55</p>
+                <button class="menuButton" data-item="Sabudana">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Puri Bhaji</h3>
+                <img src="/poori-masala-kizhangu.webp" alt="Puri Bhaji">
+                <p class="price">₹60</p>
+                <button class="menuButton" data-item="Puri">Order Now</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Paniyaram</h3>
+                <img src="/paniyaram8.webp" alt="Paddu">
+                <p class="price">₹45</p>
+                <button class="menuButton" data-item="Paddu">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <!--Billing-->
+    <div class="Billing">
+        <h1 class="menu-title">Billing</h1>
+        <div class="cart">
+            <h3 class="billingText">No items added yet</h3>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
